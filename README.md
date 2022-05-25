@@ -3,6 +3,8 @@ A set of docker file to install the development environment you want.
 
 # How ?
 
+Note: you may need sudo to execute docker command
+
 ## Build
 
 To build a docker in question use the following command:
@@ -22,3 +24,16 @@ To run:
 For example:
 
 \# docker run -it mynodejs14
+
+
+
+# Pre-built (available in DockerHub)
+
+### vim-plug
+
+vim with vim-plug (the base is Ubuntu)
+
+https://hub.docker.com/repository/docker/amine2029/vim-plug/general
+
+$sudo docker run -it amine2029/vim-plug
+	
