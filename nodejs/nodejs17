@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+RUN apt-get update -yq \
+    && apt-get install curl -yq \
+    && curl -sL https://deb.nodesource.com/setup_17.x | bash \
+    && apt-get install nodejs -yq

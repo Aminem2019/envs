@@ -1,0 +1,5 @@
+FROM amine2029/truffle
+RUN git clone https://github.com/Aminem2019/truffle-pet-shop.git pet-shop
+WORKDIR pet-shop
+RUN truffle compile
+RUN npm install

@@ -1,0 +1,8 @@
+FROM amine2029/vim-plug
+RUN apt-get update -yq \
+    && apt-get install curl -yq \
+    && curl -sL https://deb.nodesource.com/setup_14.x | bash \
+    && apt-get install -yq nodejs  
+RUN npm install -g truffle
+RUN mkdir pet-shop && cd pet-shop && truffle unbox pet-shop
+WORKDIR pet-shop

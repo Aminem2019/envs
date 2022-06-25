@@ -13,7 +13,7 @@ To build a docker in question use the following command:
 
 For example to build an environment with nodejs vesion 14 use this command:
 
-\# docker build -t mynodejs14 -f nodejs14 .
+\# docker build -t mynodejs14 -f nodejs/nodejs14 .
 
 ## Run
 
@@ -36,4 +36,7 @@ vim with vim-plug (the base is Ubuntu)
 https://hub.docker.com/repository/docker/amine2029/vim-plug/general
 
 $sudo docker run -it amine2029/vim-plug
-	
+
+### nodejs version 14
+
+$sudo docker run -it amine2029/nodejs14
